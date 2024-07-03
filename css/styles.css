@@ -1,0 +1,225 @@
+/* ini css */
+
+/* INI UNTUK MAIN CONTAINT */
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+}
+
+main {
+    padding: 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+
+ /* INI UNTUK HEADER NAV */
+ .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16px 24px;
+ }
+
+.header-wrapper > .menu{
+ display: flex;
+}
+
+.header-wrapper > .menu > button {
+    background-color: white;
+    padding: 8px 16px;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+   
+}
+button>a{
+    text-decoration: none;
+    color: black;
+}
+.header-wrapper > .menu > button:hover {
+    background-color: palegreen;
+}
+
+.header-wrapper > .menu > button:first-child {
+border-radius: 4px 0 0 4px;
+}
+
+.header-wrapper > .menu > button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.header-wrapper > .logo{
+    width: auto;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.main-content .form-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.img-slideshow{
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.img-s{
+    width: 100%;
+  
+ 
+}
+
+
+/* INI CLASS UNTUK CONTENT OUR PROFILE */
+
+.profile-icon {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item {
+    flex: 2;
+}
+
+.profile-1 {
+    background-image: url(../asset/profil2.jpeg);
+}
+
+.profile-2 {
+    background-image: url(../asset/profil3.jpeg);
+}
+
+.profile-3 {
+    background-image: url(../asset/profil1.jpeg);
+}
+
+.profile-4 {
+    background-image: url(../asset/profil4.jpeg);
+}
+
+.divider {
+    flex: 2;
+}
+
+
+/* FORM MESSAGES US */
+
+.container-msg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container {
+    width: 45%;
+}
+
+.output-container {
+    width: 45%;
+    padding: 30px;
+    border: 1px solid;
+}
+
+input:not([type="radio"]),
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.inline {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* BUTTON UNTUK SLIDE PORTOFOLIO */
+.button-port button {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #dedede;
+	font-size: 0px;
+	border-radius: 50%;
+	margin: 3px;
+	transition: 1s;
+}
+
+.button-port button:hover {
+	background-color: #666;
+}
+
+.button-port {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin-top: -50px;
+}
+.img-port{
+    flex: 2;
+    width: 80%;
+    padding-left: 100px;
+    display: block;
+}
+
+/* UNTUK RESPONSIVE */
+@media only screen and (max-width: 600px){
+	.header-wrapper{
+        flex-direction: column;
+	}
+
+    .menu{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-bottom: 14px;
+    }
+    .profile-content{
+        flex-direction: column;
+    }
+
+    .img-slideshow{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+@media screen and (max-width: 500px){
+	.wrapper{
+		width: 100%;
+        height: 100%;
+	}
+    .img-slideshow{
+        width: 100%;
+        height: 100%;
+    }
+}

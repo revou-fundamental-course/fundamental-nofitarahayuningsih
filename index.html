@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <title>noffyysso portofolio</title>
+</head>
+
+<body>
+
+    <!-- INI HEADER NAV -->
+     <div class="header-wrapper">
+        <img class="logo" alt="noffyysso-logo" src="asset/logo1.svg">
+        <div class="menu">
+            <button><a href="#Home">Home</a></button>
+            <button><a href="#our-profile">Our Profile</a></button>
+            <button><a href="#portofolio">Portofolio</a></button>
+            <button><a href="#message">Message Us</a></button>
+        </div>
+     </div>
+
+
+    <main>
+        
+        <!-- ini home content -->
+        <section>
+            <header id="Home">
+                <h1>Hi <span id = "name">User</span> </h1>
+                <p>Welcome to noffyysso portofolio</p>
+                <script src="js/script.js"></script>
+            </header>
+            
+            
+            <div class="img-s">
+                <img class="img-slideshow" src="asset/slider1.jpg" alt="">
+                <img class="img-slideshow" src="asset/slider1.jpg" alt="">
+                <img class="img-slideshow" src="asset/slider2.jpg" alt="">
+                <img class="img-slideshow" src="asset/slider2.jpg" alt="">
+                <img class="img-slideshow" src="asset/slider3.jpg" alt="">
+                <img class="img-slideshow" src="asset/slider3.jpg" alt="">
+                <img class="img-slideshow" src="asset/slider5.jpg" alt="">
+                <img class="img-slideshow" src="asset/slider5.jpg" alt="">
+                <script src="js/script.js"></script>
+            </div>
+          
+        </section>
+
+        <hr />
+
+        <!-- ini our profile content -->
+        <section id="our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <article class="profile-content">
+                <div class="profile-item">
+                    <div class="profile-icon profile-1"></div>
+                    <p>Muhammad Alfatih <br> CEO & Founder Noffyysso</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon profile-2"></div>
+                    <p>Deven Alfaro <br> CFO Noffyysso</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon profile-3"></div>
+                    <p>Al Kahfi Alaydrus <br> CTO Noffyysso</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon profile-4"></div>
+                    <p>Angga <br> COO Nofyysso</p>
+                </div>
+
+                <div class="divider">
+
+                </div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- ini portofolio content -->
+        <section id="portofolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+            <div class="wrapper">
+                    <div class="img-s">
+                        <img class="img-port" src="asset/portofolio1.png" alt="">
+                        <img class="img-port" src="asset/portofolio2.png" alt="">
+                        <img class="img-port" src="asset/portofolio3.png" alt="">
+                        <img class="img-port" src="asset/portofolio4.jpg" alt="">
+                        <img class="img-port" src="asset/portofolio5.jpg" alt=""> 
+                        <img class="img-port" src="asset/portofolio6.jpg" alt=""> 
+                        <div class="button-port">
+                            <button onclick="plusDiv(-1)">Previous</button>
+                            <button onclick="plusDiv(1)">Next</button>
+                        </div>
+                        
+                    </div>
+                    <script src="js/script.js"></script>
+            </div>
+        </section>
+           
+        </section>
+
+        <hr />
+
+        <!-- ini message us content -->
+        <section id="message">
+            <div class="container-msg">
+                <div class="form-container">
+                    <h2>Pesan Kami</h2>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda"><br>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Masukkan Email Anda"><br>
+
+                    <label for="tanggal-lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal-lahir" name="tanggal-lahir"><br>
+
+                    <label>Jenis Kelamin:</label><br>
+                    <div class="inline">
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki">
+                        <label for="laki-laki">Laki-Laki</label>
+                    </div>
+                    <div class="inline">
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                    <div style="clear: both;"></div>
+
+                    <br>
+
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Masukkan Pesan Anda"></textarea><br>
+
+                    <button onclick="tampilkanPesan()">Submit</button>
+
+                </div>
+
+                <div class="output-container">
+                    <h2>Output Pesan</h2>
+                    <p id="current-time"></p>
+                    <p id="output-nama"></p>
+                    <p id="output-email"></p>
+                    <p id="output-tanggal-lahir"></p>
+                    <p id="output-jenis-kelamin"></p>
+                    <p id="output-pesan"></p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <i class="fa fa-copyright" aria-hidden="true">@2024</i>
+    </footer>
+
+</body>
+
+</html>
